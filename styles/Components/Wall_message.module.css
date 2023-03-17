@@ -5,13 +5,14 @@
   margin: auto;
   border-radius: 10px;
   margin: 0 10px;
-  margin-top: 30px;
 }
 
 .darkMode {
   border: 2px solid var(--white1);
+  color: var(--white1);
 }
 
 .lightMode {
   border: 2px solid var(--dark0);
-}/*# sourceMappingURL=Wall.module.css.map */
+  color: var(--dark0);
+}/*# sourceMappingURL=Wall_message.module.css.map */

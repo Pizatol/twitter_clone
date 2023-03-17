@@ -1,0 +1,18 @@
+.global_container {
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.darkMode {
+  background-color: var(--dark0);
+}
+
+.lightMode {
+  background-color: var(--white1);
+}
+
+.logo img {
+  fill: "red";
+} /*# sourceMappingURL=Messages_page.module.css.map */

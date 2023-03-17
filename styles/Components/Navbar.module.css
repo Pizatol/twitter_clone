@@ -2,8 +2,16 @@
   max-width: 300px;
   width: 100%;
   height: 500px;
-  border: 1px solid red;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.buttonDarkTempo {
+  width: 60px;
+  height: auto;
 }
 
 .darkMode {
@@ -14,4 +22,21 @@
 .lightMode {
   background-color: var(--white1);
   color: var(--dark0);
+}
+
+.logoTest {
+  color: white;
+  fill: white;
+}
+
+.navigation_item_container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+.navigation_item_container p {
+  margin-left: 10px;
+  font-family: var(--DM);
+  font-size: var(--size1);
+  font-weight: bold;
 }/*# sourceMappingURL=Navbar.module.css.map */
