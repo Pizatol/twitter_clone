@@ -2,7 +2,7 @@ import React from "react";
 import css from "../styles/Components/AddTweet.module.scss";
 import { useContext } from "react";
 import { LoginContext } from "../context/LoginContext";
-
+import Button_glow from "./Buttons/Button_glow";
 export default function AddTweet() {
     const { darkMode, setDarkMode } = useContext(LoginContext);
 
@@ -14,22 +14,32 @@ export default function AddTweet() {
                     : `${css.global_container} ${css.lightMode}`
             }
         >
+            <div className={css.card_container}>
+                <div
+                    className={
+                        darkMode
+                            ? `${css.txt_part} ${css.darkMode}`
+                            : `${css.txt_part} ${css.lightMode}`
+                    }
+                >
+                    <textarea
+                        className={
+                            darkMode
+                                ? `${css.input_text} ${css.darkMode}`
+                                : `${css.input_text} ${css.lightMode}`
+                        }
+                        type="text"
+                        placeholder="Write something"
+                    />
+                </div>
 
-				<div className={css.txt_part}>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi ratione facilis illum esse consequatur sapiente nemo rem ipsam officiis!</p>
-
-				</div>
-
-				<div className={css.bottom_part}>
-					<div>
-						logos
-					</div>
-					<div>
-						<button>Tweeter</button>
-					</div>
-				</div>
-
-
-		  </div>
+                <div className={css.bottom_part}>
+                    <div>logo picture</div>
+                    <div>
+                        <Button_glow name={"Twetter"}/>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }

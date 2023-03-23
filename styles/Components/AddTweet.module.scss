@@ -18,3 +18,32 @@
 	color: var(--dark0);
 	border-bottom: 1px solid var(--dark0) ;
  }
+
+
+ .card_container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+ }
+
+ .input_text {
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	resize: none;
+	font-family: var(--DM);
+	font-size: var(--size1) ;
+	padding: 5px;
+
+ }
+ .input_text:focus {
+	outline: 0;
+ }
+
+ .bottom_part {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+ }
