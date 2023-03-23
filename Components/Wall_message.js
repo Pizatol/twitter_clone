@@ -9,6 +9,8 @@ import { LoginContext } from "../context/LoginContext";
 
 export default function Wall() {
 
+  
+
   const {
     user,
     setUser,

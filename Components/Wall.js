@@ -5,6 +5,7 @@ import css from '../styles/Components/Wall.module.scss'
 
 import { useContext } from "react";
 import { LoginContext } from "../context/LoginContext";
+import AddTweet from './AddTweet';
 
 export default function Wall() {
 
@@ -26,6 +27,7 @@ export default function Wall() {
         ? `${css.global_container} ${css.darkMode}`
         : `${css.global_container} ${css.lightMode}`
 }>
+    <AddTweet/>
 
    </div>
   )
